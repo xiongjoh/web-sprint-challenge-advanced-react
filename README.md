@@ -29,14 +29,21 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Explain how to build stateful class components.
+stateful class components can be initialized in the constructor component with this.state = {statename: {}} and set to a value using a componentDidMount() or componentDidUpdate()
 
 2. Describe the different phases of the component lifecycle.
+Component has a mounting phase, updating phase, and Unmounting phase. Mounting phase is where you initialize your states, Updating is when you have your state values changed by handlers and events, Unmounting is when the component is removed from the DOM
 
 3. Demonstrate an understanding of class component lifecycle methods.
+Mounting can be using the constructor to set this.state, rendering the component, or using componentDidMount to set the values you want to work with.
+Updating can be using rendering, componentDidMount or other handlers to set the state values.
+Unmounting is when you are finished updating and using the component and removing it off DOM, you can call componentWillUnmount to do cleanup
 
 4. Define stateful logic.
+Stateful logic is any code that changes/sets-up/updates state.
 
 5. Describe how to test a React component with React Testing Library.
+To test react components we will have to create a file called nameOfComponent.test.js, import the component and @test-library/react write the structure of the test as if a user was using the component, and have it run with npm test.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
